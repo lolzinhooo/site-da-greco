@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom right, rgb(1, 139, 12), rgb(108, 248, 138));
+    height: 100%;
+  }
+
+  .login {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(4, 90, 33, 0.493);
+    margin: 50px auto;
+    max-width: 400px;
+    padding: 30px;
+    text-align: center;
+  }
+  
+img{
+    width: 200px;
+    align-items: center;
+}
+
+ 
+
+  h1 {
+    color:#033e11;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #048c34;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+
+    button {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #048c34;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+   }
+   
+   button::before,
+   button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   button::before {
+    left: -10px;
+    background: #033e11;
+   }
+   
+   button::after {
+    right: -10px;
+    background: #04941c;
+   }
+   
+   button:hover::before,
+   button:hover::after {
+    width: 58%;
+   }
+   
+   button:hover span {
+    color: #aaffba;
+    transition: 0.3s;
+   }
+   
+   button span {
+    color: #035e1e;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+   }
+   
+   @media only screen and (max-width: 1080px) {
+    .login-form {
+      width: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .login-form {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    input[type="text"],
+    input[type="password"] {
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    .submit-button {
+      font-size: 14px;
+    }
+  }
